@@ -19,6 +19,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.example.lenovo.hr_team_7.DataAdapter_pa;
+import com.example.lenovo.hr_team_7.DataCollectionDao_pa;
+import com.example.lenovo.hr_team_7.HttpManager_pa;
+import com.example.lenovo.hr_team_7.MainActivity1;
+import com.example.lenovo.hr_team_7.MainActivity4;
+import com.example.lenovo.hr_team_7.R;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -34,14 +41,17 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -132,6 +142,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, MainActivity1.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(MainActivity.this, MainActivity4.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_manage) {
 

@@ -35,14 +35,11 @@ public class MainActivity3 extends AppCompatActivity {
         RVitem.setHasFixedSize(true);
 
 //        Txt3 = (ImageView) findViewById((R.id.Txt3));
-        Bundle bundle = getIntent().getExtras();
-        String id = bundle.getString("ID");
-        Log.d("IDGG", "onCreate: "+id);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         RVitem.setLayoutManager(llm);
         RVitem.setHasFixedSize(true);
-        getServiceData(id);
+        getServiceData();
 //        String check_status = "E";
 //        if(check_status == "E") {
 //           tl = (TimelineView) findViewById(R.id.time_marker);
@@ -75,7 +72,7 @@ public class MainActivity3 extends AppCompatActivity {
 ////        RVAdapter adapter = new RVAdapter(d);
 ////        RVitem.setAdapter(adapter);
 ////    }
-    private void getServiceData(final String id) {
+    private void getServiceData() {
 
         Call<DataCollectionDao> call = HttpManager.getInstance().getService().getDataList();
         call.enqueue(new Callback<DataCollectionDao>() {
@@ -83,8 +80,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onResponse(Call<DataCollectionDao> call, Response<DataCollectionDao> response) {
                 if (response.isSuccessful()) {
                     DataCollectionDao data = response.body();
-
-                    RVAdapter adapter = new RVAdapter(data,id);
+                    RVAdapter adapter = new RVAdapter(data);
                     RVitem.setAdapter(adapter);
 
                     Log.d("getServiceData", "if ::" + data.getData_flow().get(1).getName());

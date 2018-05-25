@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:id="@+id/header"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="ระบุสาเหตุการส่งกลับแก้ไข"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/edit_txt_leave"
+            android:hint="กรอกสาเหตุตรงนี้"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colortext"
+        android:layout_marginTop="230dp"
+        android:text="ยืนยัน" />
+
+</RelativeLayout>

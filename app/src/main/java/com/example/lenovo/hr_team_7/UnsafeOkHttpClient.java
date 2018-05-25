@@ -12,7 +12,7 @@ import javax.net.ssl.X509TrustManager;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by Lenovo on 25/4/2018.
+ * Created by Narupak on 25/4/2561.
  */
 
 public class UnsafeOkHttpClient {

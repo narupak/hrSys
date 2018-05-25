@@ -15,10 +15,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp" />
-
+    <TextView
+        android:id="@+id/txt_start_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_head"
+        android:text="วันที่ลา : 1 มกราคม 2561 - 3 กุมภาพันธ์ 2561"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RVitem1"
         android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_start_end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

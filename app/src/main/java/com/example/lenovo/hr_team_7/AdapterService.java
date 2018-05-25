@@ -35,7 +35,7 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,MainActivity3.class);
-                intent.putExtra("ID",dataDaos.getData().get(i).getLhis_id()+"");
+//                intent.putExtra("ID",);
                 context.startActivity(intent);
             }
         });
@@ -121,5 +121,7 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
     public int getItemCount() {
         return  dataDaos.getData().size();
     }
+
+
 
 }
