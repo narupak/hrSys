@@ -122,6 +122,4 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
         return  dataDaos.getData().size();
     }
 
-
-
 }
