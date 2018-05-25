@@ -26,6 +26,12 @@ public class DataAdapter_pa extends RecyclerView.Adapter<DataViewHolder_pa>{
 
         holder.text.setText(photo.getProfile().get(position).getNAME());
         holder.text2.setText(photo.getProfile().get(position).getHire_name());
+        holder.time_now.setText(photo.getProfile().get(position).getTime_now());
+        holder.time_start.setText(photo.getProfile().get(position).getTime_start());
+        holder.time_end.setText(photo.getProfile().get(position).getTime_end());
+        holder.time_not_attention.setText(photo.getCount_NOT_attention_person().get(position).getSum_no_att());
+        holder.time_all.setText(photo.getCount_NOT_attention_person().get(position).getSum_no_att());
+        holder.time_all2.setText(photo.getCount_NOT_attention_person().get(position).getSum_no_att());
     }
 
 

@@ -123,6 +123,18 @@ public class DataDao {
     @SerializedName("hire_name")
     private String hire_name;
 
+    @SerializedName("time_start")
+    private String time_start;
+
+    @SerializedName("time_end")
+    private String time_end;
+
+    @SerializedName("time_now")
+    private String time_now;
+
+    @SerializedName("sum_no_att")
+    private String sum_no_att;
+
     public String getTio_id() {
         return tio_id;
     }
@@ -147,20 +159,35 @@ public class DataDao {
         this.hire_name = hire_name;
     }
 
+    public String getTime_start() {
+        return time_start;
+    }
 
+    public void setTime_start(String time_start) {
+        this.time_start = time_start;
+    }
 
+    public String getTime_end() {
+        return time_end;
+    }
 
+    public void setTime_end(String time_end) {
+        this.time_end = time_end;
+    }
 
+    public String getTime_now() {
+        return time_now;
+    }
 
+    public void setTime_now(String time_now) {
+        this.time_now = time_now;
+    }
 
+    public String getSum_no_att() {
+        return sum_no_att;
+    }
 
-
-
-
-
-
-
-
-
-
+    public void setSum_no_att(String sum_no_att) {
+        this.sum_no_att = sum_no_att;
+    }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp">
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -13,7 +14,7 @@
                 android:id="@+id/tv_img"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:src="@mipmap/ic_launcher"></ImageView>
+                android:src="@mipmap/ic_launcher"/>
       </LinearLayout>
 
       <LinearLayout
@@ -53,10 +54,11 @@
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginTop="175dp"
+          android:layout_marginTop="195dp"
           android:orientation="horizontal">
 
             <TextView
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="5dp"
@@ -64,92 +66,26 @@
                 android:text=" สถานะการมาทำงาน ณ วันที่ "
                 android:background="@color/colorBg"
                 android:textColor="#ffffff"
-                android:textSize="17dp" />
+                android:textSize="20dp" />
       </LinearLayout>
 
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginTop="175dp"
+          android:layout_marginTop="235dp"
           android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv_status"
                 android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
                 android:layout_height="56dp"
-                android:layout_marginLeft="210dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="30dp"
                 android:text=" เวลา"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:background="@color/colorBg"
                 android:textColor="#ffffff"
-                android:textSize="17dp" />
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="230dp"
-          android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:text="     เวลาเข้า - ออกงาน:"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textColor="#848efc"
-                android:background="#55ffffff"
                 android:textSize="15dp" />
       </LinearLayout>
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="230dp"
-          android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_timein"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="160dp"
-                android:text="เวลา"
-                android:textColor="#848efc"
-                android:textSize="15dp" />
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="230dp"
-          android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="220dp"
-                android:text=" - "
-                android:textColor="#848efc"
-                android:textSize="15dp" />
-      </LinearLayout>
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="230dp"
-          android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_timeout"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginLeft="230dp"
-                android:text="เวลา"
-                android:textColor="#848efc"
-                android:textSize="15dp" />
-      </LinearLayout>
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -193,7 +129,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginLeft="170dp"
+                android:layout_marginLeft="180dp"
                 android:text="ถึง"
                 android:textColor="#ffffff"
                 android:textSize="15dp" />
@@ -210,7 +146,7 @@
                 android:id="@+id/tv_history2"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginLeft="200dp"
+                android:layout_marginLeft="210dp"
                 android:text="เวลา"
                 android:textColor="#ffffff"
                 android:textSize="15dp" />
@@ -223,10 +159,10 @@
           android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="115dp"
                 android:layout_height="56dp"
                 android:layout_marginLeft="5dp"
-                android:text="  มาทำงาน      "
+                android:text="   มาทำงาน"
                 android:background="@color/colorBg"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
@@ -254,7 +190,7 @@
           android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_sum"
+
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="130dp"
@@ -270,6 +206,7 @@
           android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_sum"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="160dp"
@@ -287,7 +224,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="180dp"
-                android:text="(จากทั้งหมด 11 วัน)"
+                android:text="จากทั้งหมด "
+                android:textSize="15dp" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="340dp"
+          android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sumall"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="255dp"
+                android:text="วัน"
+                android:textSize="15dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="340dp"
+          android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="280dp"
+                android:text="วัน"
                 android:textSize="15dp" />
       </LinearLayout>
 
@@ -298,10 +263,10 @@
           android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="115dp"
                 android:layout_height="56dp"
                 android:layout_marginLeft="5dp"
-                android:text="  ไม่มาทำงาน  "
+                android:text=" ไม่มาทำงาน"
                 android:background="@color/colorBg"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
@@ -328,7 +293,7 @@
           android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_sum2"
+
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="130dp"
@@ -343,6 +308,7 @@
           android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_sum2"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="160dp"
@@ -360,7 +326,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginLeft="180dp"
-                android:text="(จากทั้งหมด 11 วัน)"
+                android:text="จากทั้งหมด "
+                android:textSize="15dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="400dp"
+          android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sumall2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="255dp"
+                android:text="วัน "
+                android:textSize="15dp" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="400dp"
+          android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="280dp"
+                android:text="วัน "
                 android:textSize="15dp" />
       </LinearLayout>
 
