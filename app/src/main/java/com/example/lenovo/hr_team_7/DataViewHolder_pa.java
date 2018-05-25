@@ -2,6 +2,7 @@ package com.example.lenovo.hr_team_7;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class DataViewHolder_pa extends RecyclerView.ViewHolder {
@@ -13,6 +14,7 @@ public class DataViewHolder_pa extends RecyclerView.ViewHolder {
     TextView time_not_attention;
     TextView time_all2;
     TextView time_all;
+    Button btn_work;
 
 
     public DataViewHolder_pa(View itemView) {
@@ -25,5 +27,6 @@ public class DataViewHolder_pa extends RecyclerView.ViewHolder {
         time_not_attention = itemView.findViewById(R.id.tv_sum2);
         time_all = itemView.findViewById(R.id.tv_sumall2);
         time_all2 = itemView.findViewById(R.id.tv_sumall);
+        btn_work = itemView.findViewById(R.id.btn_work);
     }
 }

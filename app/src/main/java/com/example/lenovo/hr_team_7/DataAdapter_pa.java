@@ -1,5 +1,7 @@
 package com.example.lenovo.hr_team_7;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +9,11 @@ import android.view.ViewGroup;
 
 public class DataAdapter_pa extends RecyclerView.Adapter<DataViewHolder_pa>{
     private DataCollectionDao_pa photo;
+    private Context context;
 
-    public DataAdapter_pa(DataCollectionDao_pa photo) {
+    public DataAdapter_pa(DataCollectionDao_pa photo,Context context) {
         this.photo = photo;
+        this.context = context;
     }
 
     @Override
@@ -23,6 +27,13 @@ public class DataAdapter_pa extends RecyclerView.Adapter<DataViewHolder_pa>{
 
     @Override
     public void onBindViewHolder(DataViewHolder_pa holder, final int position) {
+        holder.btn_work.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,work_pa.class);
+                context.startActivity(intent);
+            }
+        });
 
         holder.text.setText(photo.getProfile().get(position).getNAME());
         holder.text2.setText(photo.getProfile().get(position).getHire_name());

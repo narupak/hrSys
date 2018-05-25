@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,6 +26,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     RecyclerView rvListPhoto;
+    Button btn_work;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,14 +34,32 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         getServiceData();
 
         rvListPhoto =  findViewById(R.id.rv_list_photo);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         rvListPhoto.setLayoutManager(manager);
+
+        btn_work = findViewById(R.id.btn_work);
+
     }
 
 
@@ -53,7 +73,7 @@ public class MainActivity extends AppCompatActivity
 
                     Log.d("getServiceData", "if ::" + data. getProfile().get(0).getTio_id());
 
-                    DataAdapter_pa dataAdapter = new DataAdapter_pa(data);
+                    DataAdapter_pa dataAdapter = new DataAdapter_pa(data,MainActivity.this);
                     rvListPhoto.setAdapter(dataAdapter);
                 } else {
                     Log.d("getServiceData", "else ::" + response.message());
