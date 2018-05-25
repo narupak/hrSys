@@ -113,6 +113,40 @@ public class DataDao {
     public void setName(String name) { Name = name; }
 
 
+    ////////// pa ///////////
+    @SerializedName("tio_ps_id")
+    private String tio_id;
+
+    @SerializedName("NAME")
+    private String NAME;
+
+    @SerializedName("hire_name")
+    private String hire_name;
+
+    public String getTio_id() {
+        return tio_id;
+    }
+
+    public void setTio_id(String tio_id) {
+        this.tio_id = tio_id;
+    }
+
+    public String getNAME() {
+        return NAME;
+    }
+
+    public void setNAME(String NAME) {
+        this.NAME = NAME;
+    }
+
+    public String getHire_name() {
+        return hire_name;
+    }
+
+    public void setHire_name(String hire_name) {
+        this.hire_name = hire_name;
+    }
+
 
 
 
