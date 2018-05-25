@@ -85,6 +85,21 @@ public class DataDao {
     }
 
     /////////////////////////////////////////////////// dataFlow
+    @SerializedName("apfp_approve_date")
+    private String apfp_approve_date;
+    public String getApfp_approve_date() {return apfp_approve_date;}
+    public void setApfp_approve_date(String apfp_approve_date) {this.apfp_approve_date = apfp_approve_date;}
+
+    @SerializedName("apfp_status")
+    private String apfp_status;
+
+    public String getApfp_status() {
+        return apfp_status;
+    }
+
+    public void setApfp_status(String apfp_status) {
+        this.apfp_status = apfp_status;
+    }
 
     @SerializedName("apfp_seq")
     private String apfp_seq;
