@@ -84,6 +84,34 @@ public class DataDao {
         this.lhis_leave_id = lhis_leave_id;
     }
 
+    /////////////////////////////////////////////////// dataFlow
+
+    @SerializedName("apfp_seq")
+    private String apfp_seq;
+    public String getApfp_seq() { return apfp_seq; }
+    public void setApfp_seq(String apfp_seq) { this.apfp_seq = apfp_seq; }
+
+    @SerializedName("apfp_status_name")
+    private String apfp_status_name;
+    public String getApfp_status_name() { return apfp_status_name; }
+    public void setApfp_status_name(String apfp_status_name) { this.apfp_status_name = apfp_status_name; }
+
+    @SerializedName("apfp_bill_id")
+    private String apfp_bill_id;
+    public String getApfp_bill_id() { return apfp_bill_id; }
+    public void setApfp_bill_id(String apfp_bill_id) { this.apfp_bill_id = apfp_bill_id; }
+
+
+    @SerializedName("apfp_apdept_name")
+    private String apfp_apdept_name;
+    public String getApfp_apdept_name() { return apfp_apdept_name; }
+    public void setApfp_apdept_name(String apfp_apdept_name) { this.apfp_apdept_name = apfp_apdept_name; }
+
+    @SerializedName("Name")
+    private String Name;
+    public String getName() { return Name; }
+    public void setName(String name) { Name = name; }
+
 
 
 

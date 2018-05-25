@@ -21,4 +21,9 @@ public class DataCollectionDao {
         this.data = data;
     }
 
+    @SerializedName("data_flow")
+    private List<DataDao> data_flow;
+    public List<DataDao> getData_flow() { return data_flow; }
+    public void setData_flow(List<DataDao> data_flow) { this.data_flow = data_flow; }
+
 }

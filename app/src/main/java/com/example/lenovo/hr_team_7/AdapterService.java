@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHolder> {
 
     private DataCollectionDao dataDaos;
-    private Context con;
+    private Context context;
 
-    public AdapterService(DataCollectionDao dataDaos,Context con) {
+    public AdapterService(DataCollectionDao dataDaos,Context context) {
         this.dataDaos = dataDaos;
-        this.con = con;
+        this.context = context;
     }
 
     @Override
@@ -34,8 +34,9 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
         dataCollectionDaoViewHolder.CVitem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(con, MainActivity2.class);
-                con.startActivity(intent);
+                Intent intent = new Intent(context,MainActivity3.class);
+//                intent.putExtra("ID",);
+                context.startActivity(intent);
             }
         });
 
@@ -112,8 +113,8 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
 
             ///////////// End Date ///////////
                 dataCollectionDaoViewHolder.TxtEndDate.setText(dataDaos.getData().get(i).getLhis_end_date());
-            ////// id /////
-                 dataCollectionDaoViewHolder.TxtID.setText(dataDaos.getData().get(i).getLhis_id());
+            //////////// id //////////
+                dataCollectionDaoViewHolder.TxtID.setText(dataDaos.getData().get(i).getLhis_id());
     }
 
     @Override
