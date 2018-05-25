@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CVitem">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@color/gray"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cvID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/Re1"
+                android:layout_width="136dp"
+                android:layout_height="149dp"
+                android:background="@drawable/round">
+
+                <TextView
+                    android:id="@+id/TxtDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="18dp"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Re2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/Re1"
+                android:background="@drawable/round">
+
+                <TextView
+                    android:id="@+id/TxtSick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:text="วันที่ลา:"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/TxtStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/TxtSick12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtStartDate"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:text="ถึง"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/TxtEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtSick12"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Re3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/Re2"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@id/Re1"
+                android:background="@drawable/round">
+
+                <TextView
+                    android:id="@+id/TxtSick2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="สถานะ : "
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/ImgStatus"
+                    android:layout_width="21dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@+id/TxtSick2"
+                    android:layout_toEndOf="@+id/TxtSick2"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:id="@+id/TxtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/TxtSick2"
+                    android:layout_marginStart="82dp"
+                    android:padding="5dp"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="#e75748"
+                    android:padding="5dp"
+                    android:text="ยกเลิกใบลา"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
