@@ -1,5 +1,7 @@
 package com.example.lenovo.hr_team_7;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,17 +10,12 @@ import android.view.ViewGroup;
 public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHolder> {
 
     private DataCollectionDao dataDaos;
+    private Context con;
 
-    public AdapterService(DataCollectionDao dataDaos) {
+    public AdapterService(DataCollectionDao dataDaos,Context con) {
         this.dataDaos = dataDaos;
+        this.con = con;
     }
-
-
-
-
-//    AdapterService(List<DataCollectionDao> dataDaos){
-//        this.dataDaos = dataDaos;
-//    }
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
@@ -34,6 +31,13 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
 
     @Override
     public void onBindViewHolder(DataCollectionDaoViewHolder dataCollectionDaoViewHolder, final int i) {
+        dataCollectionDaoViewHolder.CVitem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(con, MainActivity2.class);
+                con.startActivity(intent);
+            }
+        });
 
         ////// Leave Type //////
         dataCollectionDaoViewHolder.TxtDoc.setText(dataDaos.getData().get(i).getLeaveName());
@@ -97,6 +101,10 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
             if (dataDaos.getData().get(i).getLhis_leave_id().equals("4")) {
                 dataCollectionDaoViewHolder.thumbnail.setImageResource(R.mipmap.hobby2);
             }
+
+            if (dataDaos.getData().get(i).getLhis_leave_id().equals("12")) {
+                dataCollectionDaoViewHolder.thumbnail.setImageResource(R.mipmap.teach);
+            }
         }/////// End photo
 
              ///////////// Start Date ///////////
@@ -104,6 +112,8 @@ public class AdapterService extends RecyclerView.Adapter<DataCollectionDaoViewHo
 
             ///////////// End Date ///////////
                 dataCollectionDaoViewHolder.TxtEndDate.setText(dataDaos.getData().get(i).getLhis_end_date());
+            ////// id /////
+                 dataCollectionDaoViewHolder.TxtID.setText(dataDaos.getData().get(i).getLhis_id());
     }
 
     @Override

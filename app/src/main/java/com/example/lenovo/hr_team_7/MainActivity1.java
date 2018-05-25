@@ -1,6 +1,7 @@
 package com.example.lenovo.hr_team_7;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.shapes.Shape;
@@ -55,7 +56,7 @@ public class MainActivity1 extends AppCompatActivity {
         setContentView(R.layout.activity_main1);
 
         RVitem = (RecyclerView)findViewById(R.id.RVitem);
-        RVitem.setHasFixedSize(true);
+//        CVitem = findViewById(R.id.CVitem);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         RVitem.setLayoutManager(llm);
@@ -72,7 +73,7 @@ public class MainActivity1 extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     DataCollectionDao data = response.body();
 
-                    AdapterService dataAdapter = new AdapterService(data);
+                    AdapterService dataAdapter = new AdapterService(data,MainActivity1.this);
                     RVitem.setAdapter(dataAdapter);
 
 

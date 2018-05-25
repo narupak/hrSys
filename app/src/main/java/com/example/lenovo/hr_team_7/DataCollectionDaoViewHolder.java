@@ -10,12 +10,13 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class DataCollectionDaoViewHolder extends RecyclerView.ViewHolder {
-
+    CardView CVitem;
     TextView cvID;
     TextView TxtDoc;
     TextView TxtStartDate;
     TextView TxtEndDate;
     TextView TxtStatus;
+    TextView TxtID;
     ImageView ImgStatus;
     ImageView thumbnail;
 
@@ -29,6 +30,8 @@ public class DataCollectionDaoViewHolder extends RecyclerView.ViewHolder {
         TxtStatus = (TextView)itemView.findViewById(R.id.TxtStatus);
         ImgStatus = (ImageView) itemView.findViewById(R.id.ImgStatus);
         thumbnail = (ImageView) itemView.findViewById(R.id.thumbnail);
+        CVitem = itemView.findViewById(R.id.CVitem);
+        TxtID = itemView.findViewById(R.id.id);
     }
 }
 
