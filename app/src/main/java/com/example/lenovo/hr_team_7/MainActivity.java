@@ -19,13 +19,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.example.lenovo.hr_team_7.DataAdapter_pa;
-import com.example.lenovo.hr_team_7.DataCollectionDao_pa;
-import com.example.lenovo.hr_team_7.HttpManager_pa;
-import com.example.lenovo.hr_team_7.MainActivity1;
-import com.example.lenovo.hr_team_7.MainActivity4;
-import com.example.lenovo.hr_team_7.R;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

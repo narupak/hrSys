@@ -14,7 +14,7 @@ public class DataViewHolder_pa extends RecyclerView.ViewHolder {
     TextView time_not_attention;
     TextView time_all2;
     TextView time_all;
-    Button btn_work;
+    Button btn_work,btn_notwork;
 
 
     public DataViewHolder_pa(View itemView) {
@@ -28,5 +28,6 @@ public class DataViewHolder_pa extends RecyclerView.ViewHolder {
         time_all = itemView.findViewById(R.id.tv_sumall2);
         time_all2 = itemView.findViewById(R.id.tv_sumall);
         btn_work = itemView.findViewById(R.id.btn_work);
+        btn_notwork = itemView.findViewById(R.id.btn_notwork);
     }
 }

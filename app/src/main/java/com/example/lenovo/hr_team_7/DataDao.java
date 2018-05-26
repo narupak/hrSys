@@ -85,6 +85,21 @@ public class DataDao {
     }
 
     /////////////////////////////////////////////////// dataFlow
+    @SerializedName("apfp_approve_date")
+    private String apfp_approve_date;
+    public String getApfp_approve_date() {return apfp_approve_date;}
+    public void setApfp_approve_date(String apfp_approve_date) {this.apfp_approve_date = apfp_approve_date;}
+
+    @SerializedName("apfp_status")
+    private String apfp_status;
+
+    public String getApfp_status() {
+        return apfp_status;
+    }
+
+    public void setApfp_status(String apfp_status) {
+        this.apfp_status = apfp_status;
+    }
 
     @SerializedName("apfp_seq")
     private String apfp_seq;
@@ -112,38 +127,16 @@ public class DataDao {
     public String getName() { return Name; }
     public void setName(String name) { Name = name; }
 
-        ////////// pa ///////////
-        @SerializedName("tio_ps_id")
-        private String tio_id;
 
-        @SerializedName("NAME")
-        private String NAME;
+    ////////// pa ///////////
+    @SerializedName("tio_ps_id")
+    private String tio_id;
 
-        public String getTio_id() {
-            return tio_id;
-        }
+    @SerializedName("NAME")
+    private String NAME;
 
-        public void setTio_id(String tio_id) {
-            this.tio_id = tio_id;
-        }
-
-        public String getNAME() {
-            return NAME;
-        }
-
-        public void setNAME(String NAME) {
-            this.NAME = NAME;
-        }
     @SerializedName("hire_name")
     private String hire_name;
-
-        public String getHire_name() {
-            return hire_name;
-        }
-
-        public void setHire_name(String hire_name) {
-            this.hire_name = hire_name;
-        }
 
     @SerializedName("time_start")
     private String time_start;
@@ -157,6 +150,29 @@ public class DataDao {
     @SerializedName("sum_no_att")
     private String sum_no_att;
 
+    public String getTio_id() {
+        return tio_id;
+    }
+
+    public void setTio_id(String tio_id) {
+        this.tio_id = tio_id;
+    }
+
+    public String getNAME() {
+        return NAME;
+    }
+
+    public void setNAME(String NAME) {
+        this.NAME = NAME;
+    }
+
+    public String getHire_name() {
+        return hire_name;
+    }
+
+    public void setHire_name(String hire_name) {
+        this.hire_name = hire_name;
+    }
 
     public String getTime_start() {
         return time_start;
@@ -186,32 +202,7 @@ public class DataDao {
         return sum_no_att;
     }
 
-
-
-
-
-
-
-
-
-
     public void setSum_no_att(String sum_no_att) {
         this.sum_no_att = sum_no_att;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

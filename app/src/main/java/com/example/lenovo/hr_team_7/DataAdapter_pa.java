@@ -35,6 +35,14 @@ public class DataAdapter_pa extends RecyclerView.Adapter<DataViewHolder_pa>{
             }
         });
 
+        holder.btn_notwork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,not_work_pa.class);
+                context.startActivity(intent);
+            }
+        });
+
         holder.text.setText(photo.getProfile().get(position).getNAME());
         holder.text2.setText(photo.getProfile().get(position).getHire_name());
         holder.time_now.setText(photo.getProfile().get(position).getTime_now());

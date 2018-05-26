@@ -1,29 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".work_pa">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp">
 
-    <!--<android.support.design.widget.AppBarLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
 
-        <!--<android.support.v7.widget.Toolbar-->
-            <!--android:id="@+id/toolbar"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="?attr/actionBarSize"-->
-            <!--android:background="?attr/colorPrimary"-->
-            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="รายละเอียดการมาทำงาน"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="#D0B3E1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
 
-    <!--</android.support.design.widget.AppBarLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="มาทำงาน"
+            android:textSize="25dp"
+            android:background="#FFBE7D"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="555555"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="140dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="****ไม่พบข้อมูล****"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>

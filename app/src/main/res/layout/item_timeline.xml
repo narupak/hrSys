@@ -37,7 +37,8 @@ android:layout_marginRight="10dp">
             android:id="@+id/txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/txt2"
@@ -51,21 +52,24 @@ android:layout_marginRight="10dp">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt2"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/txt4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt3"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/txt5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt4"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 

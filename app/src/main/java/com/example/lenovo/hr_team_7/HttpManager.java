@@ -19,9 +19,9 @@ public class HttpManager {
     private ApiService service;
 
     private HttpManager() {
-        mContext = com.example.lenovo.hr_team_7.Contextor.getInstance().getContext();
-        OkHttpClient okHttpClient = com.example.lenovo.hr_team_7.UnsafeOkHttpClient.getUnsafeOkHttpClient();
-        //
+        mContext = Contextor.getInstance().getContext();
+        OkHttpClient okHttpClient = UnsafeOkHttpClient.getUnsafeOkHttpClient();
+        //.client(okHttpClient)
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://10.80.39.23/pcksite/index.php/hr/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -29,7 +29,8 @@ public class HttpManager {
                 .build();
         service = retrofit.create(ApiService.class);
     }
-    public ApiService getService(){
+
+    public  ApiService getService(){
         return  service;
     }
 }

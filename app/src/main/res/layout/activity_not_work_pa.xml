@@ -1,38 +1,529 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".not_work_pa">
-
-    <!--<android.support.design.widget.AppBarLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
-
-        <!--<android.support.v7.widget.Toolbar-->
-            <!--android:id="@+id/toolbar"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="?attr/actionBarSize"-->
-            <!--android:background="?attr/colorPrimary"-->
-            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
-
-    <!--</android.support.design.widget.AppBarLayout>-->
-
-    <!--<include layout="@layout/content_not_work_pa" />-->
-
-    <!--<android.support.design.widget.FloatingActionButton-->
-        <!--android:id="@+id/fab"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="bottom|end"-->
-        <!--android:layout_margin="@dimen/fab_margin"-->
-        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+    android:fillViewport="true"
+    android:scrollbars="none" >
 
 
-    <TextView
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp">
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="55555555555"/>
-</android.support.design.widget.CoordinatorLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="รายละเอียดการไม่มาทำงาน"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="#D0B3E1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="ลาพักผ่อน"
+            android:textSize="25dp"
+            android:background="#FFBE7D"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="ลำดับ"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="เริ่มลา"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="สิ้นสุด"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorBg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="205dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="205dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="205dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="260dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="260dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="260dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="ลาป่วย"
+            android:textSize="25dp"
+            android:background="#FFBE7D"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="420dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="ลำดับ"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="420dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="เริ่มลา"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="420dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="สิ้นสุด"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorBg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="475dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="475dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="475dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="530dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="530dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="530dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="620dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="ลากิจ"
+            android:textSize="25dp"
+            android:background="#FFBE7D"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="690dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="ลำดับ"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="690dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="เริ่มลา"
+            android:textSize="25dp"
+            android:background="@color/colorBg"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="690dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="สิ้นสุด"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorBg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="750dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="750dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="750dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="9 เม.ย. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="810dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="810dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="810dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="282dp"
+            android:gravity="center"
+            android:text="7 พ.ค. 61"
+            android:textSize="25dp"
+            android:background="#ba9345"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://C:\Users\ASUS\Documents\GitHub\hrSys\HR_TEAM_7.iml" filepath="C:\Users\ASUS\Documents\GitHub\hrSys\HR_TEAM_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\ASUS\Documents\GitHub\hrSys\app\app.iml" filepath="C:\Users\ASUS\Documents\GitHub\hrSys\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrSys.iml" filepath="$PROJECT_DIR$/hrSys.iml" />
     </modules>
   </component>

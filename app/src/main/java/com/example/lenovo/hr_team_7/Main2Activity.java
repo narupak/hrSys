@@ -170,7 +170,7 @@ public class Main2Activity extends AppCompatActivity implements Callback<Respons
                             ResponseBody responsebody = response.body();
                             try{
                                 Log.d("getServiceData", "if ::" + responsebody.string());
-                                Intent refresh = new Intent(Main2Activity.this, Main2Activity.class);
+                                Intent refresh = new Intent(Main2Activity.this, MainActivity.class);
                                 startActivity(refresh);
                                 finish();
                             }catch (IOException e){
@@ -211,6 +211,9 @@ public class Main2Activity extends AppCompatActivity implements Callback<Respons
             Call<ResponseBody> responseBody = apiService.savePost(paramObject.toString());
             Log.d("getServiceData", "if ::" + paramObject);
             responseBody.enqueue(this);
+            Intent refresh = new Intent(Main2Activity.this, MainActivity.class);
+            startActivity(refresh);
+            finish();
         }catch (JSONException e){
             e.printStackTrace();
         }
@@ -251,7 +254,7 @@ public class Main2Activity extends AppCompatActivity implements Callback<Respons
         Log.d("getServiceData", "if ::" + response.message());
         try{
             Log.d("getServiceData", "if ::" + responsebody.string());
-            Intent refresh = new Intent(Main2Activity.this, Main2Activity.class);
+            Intent refresh = new Intent(Main2Activity.this, MainActivity.class);
             startActivity(refresh);
             finish();
         }catch (IOException e){
